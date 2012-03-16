@@ -1,0 +1,8 @@
+<h1>Show job</h1>
+<p id="message"><%= @status.message %></p>
+<div style="display:none;" id="progressbar" data-value="<%= @status["num"] %>" class="job-status"> </div>
+<pre class="job">
+<span id="job-status" data-uuid="<%= @status["uuid"] %>" data-url="<%= job_url(:id => @status["uuid"]) %>"> 
+<%= pp @status %>
+</span>
+</pre>
